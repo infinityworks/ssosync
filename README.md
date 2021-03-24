@@ -113,6 +113,7 @@ Flags:
   -c, --google-credentials string   set the path to find credentials for Google (default "credentials.json")
   -h, --help                        help for ssosync
       --ignore-groups strings       ignores these groups
+      --include-groups strings      include only these groups
       --ignore-users strings        ignores these users
       --log-format string           log format (default "text")
       --log-level string            log level (default "warn")
