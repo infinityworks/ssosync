@@ -154,6 +154,34 @@ Specify an Amazon S3 Bucket for the upload with `export S3_BUCKET=<YOUR_BUCKET>`
 
 Execute `make package` in the console. Which will package and upload the function to the bucket. You can then use the `packaged.yaml` to configure and deploy the stack in [AWS CloudFormation Console](https://console.aws.amazon.com/cloudformation).
 
+## How to Deploy
+
+Use the AWS CLI SSO credentials
+
+Go into the code, in a shell terminal run 'make package'
+
+Log in to the AWS Console
+
+Cloud formation > Serverlessrepo-ssosync
+
+Update > Replace > upload template
+
+select the 'package.yaml' from the code
+
+Click next until uploaded
+
+## How to change included groups
+
+Log into the AWS console 
+
+Go to the lambda "serverlessrepo-ssosync..."
+
+Configuration > Enviroment variables > Edit
+
+change the envirement variable "include_groups"
+
+Add groups in the form of "groupA,groupB,groupC"
+
 ## License
 
 [Apache-2.0](/LICENSE)
